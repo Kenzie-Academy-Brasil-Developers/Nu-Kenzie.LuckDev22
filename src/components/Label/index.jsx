@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
-export const Label = ({htmlFor, children}) => {
-  return (
-    <label htmlFor={htmlFor}>{children}</label>
-  )
-}
+export const Label = ({ htmlFor, children }) => {
+  return <label htmlFor={htmlFor}>{children}</label>;
+};

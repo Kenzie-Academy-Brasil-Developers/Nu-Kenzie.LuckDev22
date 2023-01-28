@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Button } from "../Button";
-import { Input } from "../Input";
 import { Label } from "../Label";
 import { v4 as id } from "uuid";
 
@@ -15,7 +13,11 @@ export const Form = ({ listTransactions, setListTransactions }) => {
     event.preventDefault();
     const newValue = { ...formData, id: id() };
 
-    if (formData.description !== "" && formData.value !== "" && formData.type !== "") {
+    if (
+      formData.description !== "" &&
+      formData.value !== "" &&
+      formData.type !== ""
+    ) {
       setListTransactions([...listTransactions, newValue]);
     } else {
       alert("Campos sem preencher");

@@ -10,9 +10,11 @@ function App() {
   ]);
 
   const [home, setHome] = useState(true);
-  const [filter, setFilter] = useState("todos")
+  const [filter, setFilter] = useState("todos");
 
-  const cartsFiltrados = listTransactions.filter(cart => filter === "todos" ? true : cart.type === filter)
+  const cardsFiltrados = listTransactions.filter((cart) =>
+    filter === "todos" ? true : cart.type === filter
+  );
 
   return (
     <div className="App">
@@ -22,7 +24,7 @@ function App() {
         <Home
           setHome={setHome}
           setListTransactions={setListTransactions}
-          listTransactions={cartsFiltrados}
+          listTransactions={cardsFiltrados}
           setFilter={setFilter}
         />
       )}

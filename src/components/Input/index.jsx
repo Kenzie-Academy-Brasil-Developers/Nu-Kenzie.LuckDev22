@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export const Input = ({change,type, valor, placeholder,setFormData}) => {
+export const Input = ({ change, type, valor, placeholder, setFormData }) => {
   return (
-    <input type={type}  value={valor} onChange={(event) => setFormData({change})} placeholder={placeholder}/>
-  )
-}
+    <input
+      type={type}
+      value={valor}
+      onChange={(event) => setFormData({ change })}
+      placeholder={placeholder}
+    />
+  );
+};
