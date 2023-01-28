@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Input = () => {
+export const Input = ({change,type, valor, placeholder,setFormData}) => {
   return (
-    <div>Input</div>
+    <input type={type}  value={valor} onChange={(event) => setFormData({change})} placeholder={placeholder}/>
   )
 }

@@ -2,15 +2,17 @@ import React from "react";
 import { FaTrash } from "react-icons/fa"
 import { Button } from "../../Button";
 
-export const Cart = ({ list, index }) => {
+export const Cart = ({delCart, list, index }) => {
   return (
-    <li key={index} className={list.type === "entrada" ? "entrada" : "saida"}>
+    <li key={index} className={list.type === "entrada" ? "entrada" : "saída"}>
       <div className="">
         <h2 className="titleDescrip">{list.description}</h2>
         <h3 className="type">{list.type}</h3>
       </div>
-      <h3 className="value">R$ {list.value},00</h3>
-      <Button><FaTrash/></Button>
+      <h3 className="value">R$ {list.type === "saída" ? (
+        <span>-</span>) : (<></>)
+      }{list.value},00</h3>
+      <Button actionFunction={() => delCart(list.id)}><FaTrash/></Button>
     </li>
   );
 };

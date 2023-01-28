@@ -1,5 +1,7 @@
 import React from "react";
 
-export const Button = ({ actionFunction, children }) => {
-  return <button onClick={() => actionFunction()}>{children}</button>;
+export const Button = ({ type, actionFunction, children }) => {
+  return (
+  <button type={type} onClick={() => actionFunction()}>{children}</button>
+  );
 };
