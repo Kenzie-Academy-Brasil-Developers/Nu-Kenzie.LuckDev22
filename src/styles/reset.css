@@ -1,13 +1,30 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+    outline:0;
 
+}
+
+html, body, #root, #root>div {
+    height: 100%;
 }
 
 button{
     cursor: pointer;
+    border: none;
+    background: transparent;
 }
 
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, li, button, label, input{
+    font-family: "Nunito", "Inter", sans-serif;
+}
