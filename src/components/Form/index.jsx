@@ -1,4 +1,4 @@
-import "./index.css"
+import "./index.css";
 import { useState } from "react";
 import { Label } from "../Label";
 import { v4 as id } from "uuid";
@@ -73,7 +73,9 @@ export const Form = ({ listTransactions, setListTransactions }) => {
           </select>
         </div>
       </div>
-      <button className="btnAdd"type="submit">Inserir valor</button>
+      <button className="btnAdd" type="submit">
+        Inserir valor
+      </button>
     </form>
   );
 };

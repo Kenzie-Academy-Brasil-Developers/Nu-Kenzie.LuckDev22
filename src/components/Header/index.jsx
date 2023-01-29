@@ -7,7 +7,9 @@ export const Header = ({ setHome }) => {
     <header className="header">
       <div>
         <img src={logo} alt="" />
-        <Button className="btnHeader"actionFunction={() => setHome(true)}>Início</Button>
+        <Button className="btnHeader" actionFunction={() => setHome(true)}>
+          Início
+        </Button>
       </div>
     </header>
   );
