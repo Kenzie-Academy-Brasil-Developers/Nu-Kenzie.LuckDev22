@@ -1,3 +1,4 @@
+import "./index.css"
 import React from "react";
 
 export function TotalValue({ listTransactions }) {
@@ -10,9 +11,9 @@ export function TotalValue({ listTransactions }) {
   }, 0);
 
   return (
-    <div className="divTotalInfo">
+    <div className="divTotalCard">
       <div className="totalValue">
-        <h3>Valor total: </h3> <span>R$ {total},00</span>
+        <h3>Valor total: </h3> <span>$ {total},00</span>
       </div>
       <p>O valor se refere ao saldo</p>
     </div>

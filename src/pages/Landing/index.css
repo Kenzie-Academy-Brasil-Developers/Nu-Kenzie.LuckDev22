@@ -25,7 +25,7 @@ h1 {
   font-weight: 800;
   font-size: 2.375rem;
   line-height: 3rem;
-  color: #ffffff;
+  color: var(--grey-0);
 }
 
 span {
@@ -34,15 +34,15 @@ span {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.625rem;
-  color: #ffffff;
+  color: var(--grey-0);
 }
 
 .divInfoLand > button {
   max-width: 240px;
   height: 3rem;
-  color: #ffffff;
-  background: #fd377e;
-  border: 0.125rem solid #fd377e;
+  color: var(--grey-0);
+  background: var(--color-primary);
+  border: 0.125rem solid var(--color-primary);
   border-radius: 0.5rem;
   font-size: 1rem;
 }
@@ -54,18 +54,15 @@ span {
 @media (min-width: 320px) {
   .divInfoLand {
     width: 50%;
-    transition: all 1s ease;
   }
 
   .divLogo {
     width: 80%;
     display: block;
-    transition: all 1s ease;
   }
 
   .divLogo > img {
     width: 100%;
-    transition: all 1s ease;
   }
 }
 
@@ -80,29 +77,24 @@ span {
 @media (min-width: 768px) {
   body {
     width: 100%;
-    transition: all 1s ease;
   }
 
   .divLogo {
     width: 35%;
-    transition: all 1s ease;
   }
 
   .divInfoLand {
     width: 40%;
     max-width: 400px;
-    transition: all 1s ease;
   }
 
   .divLogo {
     width: 60%;
     max-width: 600px;
     display: block;
-    transition: all 1s ease;
   }
 
   .divLogo > img {
     width: 80%;
-    transition: all 1s ease;
   }
 }

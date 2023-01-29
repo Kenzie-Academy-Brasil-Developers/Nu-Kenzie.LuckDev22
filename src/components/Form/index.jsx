@@ -1,3 +1,4 @@
+import "./index.css"
 import { useState } from "react";
 import { Label } from "../Label";
 import { v4 as id } from "uuid";
@@ -34,10 +35,7 @@ export const Form = ({ listTransactions, setListTransactions }) => {
 
   return (
     <form onSubmit={submit} noValidate>
-      <h1>{formData.description}</h1>
-      <h1>{formData.type}</h1>
-      <h1>{formData.value}</h1>
-      <div>
+      <div className="divForm">
         <Label htmlFor="description">Description</Label>
         <input
           type="text"
@@ -45,22 +43,25 @@ export const Form = ({ listTransactions, setListTransactions }) => {
           onChange={(event) =>
             setFormData({ ...formData, description: event.target.value })
           }
+          placeholder="Digite aqui sua descrição"
         ></input>
         <p>Ex.: Compra de roupas</p>
       </div>
-      <div>
+
+      <div className="divValueAndType">
         <div className="divValue">
-          <Label htmlFor="value">Valor</Label>
+          <Label htmlFor="value">Valor:</Label>
           <input
             type="number"
             value={formData.value}
             onChange={(event) =>
               setFormData({ ...formData, value: event.target.value })
             }
+            placeholder="R$ 0000,00  "
           ></input>
         </div>
-        <div className="divSelect">
-          <Label htmlFor="selectType">Tipo de Valor</Label>
+        <div className="divValue">
+          <Label htmlFor="selectType">Tipo de Valor:</Label>
           <select
             onChange={(event) =>
               setFormData({ ...formData, type: event.target.value })
@@ -72,7 +73,7 @@ export const Form = ({ listTransactions, setListTransactions }) => {
           </select>
         </div>
       </div>
-      <button type="submit">Inserir valor</button>
+      <button className="btnAdd"type="submit">Inserir valor</button>
     </form>
   );
 };

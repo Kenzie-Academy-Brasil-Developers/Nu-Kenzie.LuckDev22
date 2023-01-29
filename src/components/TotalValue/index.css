@@ -1,0 +1,29 @@
+.divTotalCard {
+  width: 363px;
+  height: 6rem;
+  max-width: 22.6875rem;
+  border: 1px solid var(--grey-2);
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.totalValue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divTotalCard p {
+    margin-top: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: var(--grey-3);
+}
+
+.totalValue > span {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: var(--color-primary);
+}
