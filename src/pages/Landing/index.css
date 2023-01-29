@@ -10,7 +10,7 @@
 }
 
 .logoNu {
-   max-width: 150px;
+  max-width: 150px;
 }
 
 .divInfoLand {
@@ -37,76 +37,72 @@ span {
   color: #ffffff;
 }
 
-
 .divInfoLand > button {
-    max-width: 240px;
-    height: 3rem;
-    color: #ffffff; 
-    background: #fd377e;
-    border: 0.125rem solid #fd377e;
-    border-radius: 0.5rem;
-    font-size: 1rem;
+  max-width: 240px;
+  height: 3rem;
+  color: #ffffff;
+  background: #fd377e;
+  border: 0.125rem solid #fd377e;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
-
 
 .divLogo {
-    display: none;
+  display: none;
 }
 
-@media(min-width: 320px){
-    .divInfoLand {
-        width: 50%;
-        transition: all 1s ease;
-    }
+@media (min-width: 320px) {
+  .divInfoLand {
+    width: 50%;
+    transition: all 1s ease;
+  }
 
-    .divLogo{
-        width: 80%;
-        display: block;
-        transition: all 1s ease;
-    }
+  .divLogo {
+    width: 80%;
+    display: block;
+    transition: all 1s ease;
+  }
 
-    .divLogo > img {
-        width: 100%;
-        transition: all 1s ease;
-    }
-    
+  .divLogo > img {
+    width: 100%;
+    transition: all 1s ease;
+  }
 }
 
-@media (max-width:650px){
-    .container {
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-    }
+@media (max-width: 650px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
-    body {
+  body {
     width: 100%;
     transition: all 1s ease;
-    }
+  }
 
-    .divLogo {
+  .divLogo {
     width: 35%;
     transition: all 1s ease;
-    }
+  }
 
-    .divInfoLand {
+  .divInfoLand {
     width: 40%;
     max-width: 400px;
     transition: all 1s ease;
-    }
+  }
 
-    .divLogo {
+  .divLogo {
     width: 60%;
     max-width: 600px;
     display: block;
     transition: all 1s ease;
-    }
+  }
 
-    .divLogo > img {
+  .divLogo > img {
     width: 80%;
     transition: all 1s ease;
-    }
+  }
 }
-
