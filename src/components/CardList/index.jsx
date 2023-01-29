@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../Button";
 import { Card } from "./Card";
 import CardEmpty from "../../img/NoCard.png";
+import "./index.css";
 
 export const CardList = ({
   listTransactions,
@@ -15,29 +16,31 @@ export const CardList = ({
 
   return (
     <>
-      <div>
+      <div className="divFilter">
         <h2>Resumo Financeiro</h2>
-        <Button
-          className=""
-          actionFunction={() => setFilter("todos")}
-          value="todos"
-        >
-          Todos
-        </Button>
-        <Button
-          className=""
-          actionFunction={() => setFilter("entrada")}
-          value="entrada"
-        >
-          Entradas
-        </Button>
-        <Button
-          className=""
-          actionFunction={() => setFilter("saída")}
-          value="saída"
-        >
-          Despesas
-        </Button>
+        <div className="divBtn">
+          <Button
+            className="btnFilter"
+            actionFunction={() => setFilter("todos")}
+            value="todos"
+          >
+            Todos
+          </Button>
+          <Button
+            className="btnFilter filterTwo"
+            actionFunction={() => setFilter("entrada")}
+            value="entrada"
+          >
+            Entradas
+          </Button>
+          <Button
+            className="btnFilter filterTwo"
+            actionFunction={() => setFilter("saída")}
+            value="saída"
+          >
+            Despesas
+          </Button>
+        </div>
       </div>
       <div>
         <ul>

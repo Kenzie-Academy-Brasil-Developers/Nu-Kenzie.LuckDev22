@@ -1,5 +1,6 @@
 form {
   width: 22.6875rem;
+  max-width: 363px;
   border: 1px solid var(--grey-2);
   border-radius: 4px;
   display: flex;

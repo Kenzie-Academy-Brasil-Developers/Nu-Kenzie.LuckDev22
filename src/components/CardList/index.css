@@ -1,0 +1,48 @@
+.divFilter {
+  display: flex;
+  flex-direction: column;
+  max-width: 363px;
+}
+
+.divFilter h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--grey-4);
+}
+
+.divBtn{
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.btnFilter {
+    width: 69px;
+    height: 40px;
+    background: var(--grey-2);
+    border: 1.4px solid var(--grey-2);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #343a40;
+  }
+  
+  .btnFilter:focus {
+    color:var(--grey-0);
+    background: var(--color-primary);
+    border: 1.4px solid var(--color-primary);
+  }
+
+  .btnFilter:hover {
+    color:var(--grey-0);
+    background: var(--color-primary);
+    border: 1.4px solid var(--color-primary);
+  }
+
+  
+  .filterTwo {
+    width: 87px;
+  }

@@ -3,6 +3,7 @@ import { CardList } from "../../components/CardList";
 import { Form } from "../../components/Form";
 import { Header } from "../../components/Header";
 import { TotalValue } from "../../components/TotalValue";
+import "./index.css";
 
 export const Home = ({
   setHome,
@@ -11,10 +12,10 @@ export const Home = ({
   setFilter,
 }) => {
   return (
-    <>
+    <div className="homePage">
       <Header setHome={setHome} />
-      <section>
-        <div>
+      <div className="corpo">
+        <section>
           <Form
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
@@ -25,17 +26,16 @@ export const Home = ({
           ) : (
             <></>
           )}
-        </div>
-        <div></div>
-      </section>
-      <section>
-        <CardList
-          setHome={setHome}
-          setListTransactions={setListTransactions}
-          listTransactions={listTransactions}
-          setFilter={setFilter}
-        />
-      </section>
-    </>
+        </section>
+        <section className="sectionCards">
+          <CardList
+            setHome={setHome}
+            setListTransactions={setListTransactions}
+            listTransactions={listTransactions}
+            setFilter={setFilter}
+          />
+        </section>
+      </div>
+    </div>
   );
 };

@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+  .sectionCards {
+    width: 560px;
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .corpo {
+    max-width: 1200px;
+    margin-top:30px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease;
+    gap:60px
+  }
+}
+
+
+/* .corpo{
+    display: flex;
+    justify-content: center;
+} */
+
+.homePage {
+  padding-left: 8px;
+}
